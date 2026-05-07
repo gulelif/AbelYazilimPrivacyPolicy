@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Breach - Gizlilik Politikası</title>
+    <style>
+      :root {
+        --bg: #07111f;
+        --bg-soft: #0d1a2b;
+        --panel: rgba(10, 20, 34, 0.88);
+        --border: rgba(61, 206, 255, 0.28);
+        --accent: #00ffa3;
+        --accent-soft: #3ed9ff;
+        --text: #e8f3ff;
+        --muted: #9fb6c9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(62, 217, 255, 0.12), transparent 36%),
+          linear-gradient(180deg, #09111d 0%, #050b14 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(62, 217, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(62, 217, 255, 0.05) 1px, transparent 1px);
+        background-size: 32px 32px;
+        pointer-events: none;
+      }
+
+      .wrap {
+        position: relative;
+        width: min(960px, calc(100% - 32px));
+        margin: 40px auto;
+      }
+
+      .hero,
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+          0 24px 60px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(10px);
+      }
+
+      .hero {
+        padding: 28px;
+        margin-bottom: 18px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        margin-bottom: 14px;
+        color: var(--accent);
+        border: 1px solid rgba(0, 255, 163, 0.28);
+        background: rgba(0, 255, 163, 0.08);
+        font: 700 12px/1.2 Consolas, "Courier New", monospace;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(30px, 5vw, 44px);
+        line-height: 1.05;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .date {
+        margin-top: 14px;
+        color: var(--accent-soft);
+        font: 700 13px/1.4 Consolas, "Courier New", monospace;
+      }
+
+      .card {
+        padding: 28px;
+      }
+
+      h2 {
+        margin: 26px 0 12px;
+        color: var(--accent);
+        font-size: 20px;
+      }
+
+      h2:first-child {
+        margin-top: 0;
+      }
+
+      p,
+      li {
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        margin: 0 0 14px 18px;
+        padding: 0;
+      }
+
+      a {
+        color: var(--accent-soft);
+      }
+
+      .footer {
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(100% - 20px, 960px);
+          margin: 20px auto;
+        }
+
+        .hero,
+        .card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">System Breach</div>
+        <h1>Gizlilik Politikası</h1>
+        <p class="subtitle">
+          Bu sayfa, <strong>System Breach</strong> oyununun kullanıcı verilerini
+          nasıl işlediğini açıklar.
+        </p>
+        <div class="date">Yürürlük tarihi: 7 Mayıs 2026</div>
+      </section>
+
+      <section class="card">
+        <h2>1. Toplanan veriler</h2>
+        <p>
+          System Breach doğrudan ad, soyad, e-posta adresi veya telefon numarası
+          gibi kişisel bilgileri istemez.
+        </p>
+        <p>Uygulama içinde aşağıdaki veriler cihaz üzerinde yerel olarak saklanabilir:</p>
+        <ul>
+          <li>bölüm ve chapter ilerlemesi</li>
+          <li>oyun içi coin bakiyesi</li>
+          <li>günlük ödül durumu</li>
+          <li>kefaret / ceza kayıtları</li>
+          <li>performans kayıtları ve deneme sayıları</li>
+          <li>operasyon kayıtları ve istatistikler</li>
+          <li>dil ve ses ayarları</li>
+        </ul>
+
+        <h2>2. Reklamlar</h2>
+        <p>
+          Oyun, ödüllü reklam göstermek için Google Mobile Ads kullanır.
+        </p>
+        <p>
+          Bu nedenle Google ve reklam ortakları aşağıdaki teknik verileri işleyebilir:
+        </p>
+        <ul>
+          <li>cihaz tanımlayıcıları</li>
+          <li>IP adresi</li>
+          <li>reklam etkileşim bilgileri</li>
+          <li>yaklaşık konum gibi reklam sunumu için gerekli teknik veriler</li>
+        </ul>
+        <p>
+          Bu veriler reklam hizmetinin çalışması, reklam sunumu ve dolandırıcılık
+          önleme gibi amaçlarla Google tarafından işlenebilir.
+        </p>
+        <p>
+          Daha fazla bilgi:
+          <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
+          <a href="https://policies.google.com/technologies/partner-sites"
+            >How Google uses information from sites or apps that use its services</a
+          >
+        </p>
+
+        <h2>3. Veriler nerede saklanır</h2>
+        <p>
+          Oyun ilerleme ve ayar verilerinin büyük bölümü cihaz üzerinde yerel olarak
+          saklanır.
+        </p>
+        <p>
+          Şu anda uygulama içinde kullanıcı hesabı sistemi veya geliştiricinin kendi
+          sunucusuna gönderilen bir oyun kayıt altyapısı bulunmamaktadır.
+        </p>
+
+        <h2>4. Veriler hangi amaçla kullanılır</h2>
+        <ul>
+          <li>oyunun çalışmasını sağlamak</li>
+          <li>ilerleme durumunu korumak</li>
+          <li>reklam ödüllerini işlemek</li>
+          <li>kullanıcı tercihlerini hatırlamak</li>
+          <li>oyun içi istatistikleri göstermek</li>
+        </ul>
+
+        <h2>5. Veri saklama süresi</h2>
+        <p>
+          Yerel veriler, kullanıcı uygulamayı silene, uygulama verilerini temizleyene
+          veya oyun içindeki sıfırlama seçeneklerini kullanana kadar cihazda kalabilir.
+        </p>
+
+        <h2>6. Çocukların gizliliği</h2>
+        <p>
+          Uygulama, bilerek çocuklardan kişisel veri toplamak amacıyla tasarlanmamıştır.
+          Ancak reklam servisleri kendi politikaları kapsamında teknik veri işleyebilir.
+        </p>
+
+        <h2>7. Üçüncü taraf hizmetler</h2>
+        <p>Uygulama şu üçüncü taraf hizmetleri kullanabilir:</p>
+        <ul>
+          <li>Google Mobile Ads</li>
+        </ul>
+        <p>
+          İleride Google Play Games, bulut kayıt veya benzeri ek servisler eklenirse bu
+          politika güncellenebilir.
+        </p>
+
+        <h2>8. Kullanıcı hakları</h2>
+        <p>Kullanıcı aşağıdaki işlemleri yapabilir:</p>
+        <ul>
+          <li>uygulamayı kaldırarak yerel verileri kaldırmak</li>
+          <li>cihaz ayarlarından uygulama verilerini temizlemek</li>
+          <li>oyun içindeki sıfırlama seçeneklerini kullanmak</li>
+        </ul>
+
+        <h2>9. Bu politikanın güncellenmesi</h2>
+        <p>
+          Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncel sürüm uygulamanın
+          mağaza sayfasında veya geliştirici tarafından sağlanan resmi bağlantıda
+          yayınlanır.
+        </p>
+
+        <h2>10. İletişim</h2>
+        <p>
+          Gizlilik ile ilgili sorular için Google Play mağaza sayfasında yer alan
+          geliştirici iletişim adresi kullanılabilir.
+        </p>
+      </section>
+
+      <div class="footer">System Breach Privacy Policy</div>
+    </main>
+  </body>
+</html>
